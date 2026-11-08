@@ -57,7 +57,7 @@ function App() {
 
     setstatus(true)
 
-    axios.post('http://localhost:5000/sendmail', {
+    axios.post('https://bulk-mail-backend-qv13.onrender.com/sendmail', {
       msg: msg,
       emaillist: emaillist
     })

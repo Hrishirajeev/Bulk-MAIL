@@ -66,7 +66,8 @@ app.post('/sendmail', function(req, res) {
 
             }
             catch(error) {
-                reject("Failed")
+            console.log("EMAIL ERROR:", error)
+            reject(error)
             }
 
         })
